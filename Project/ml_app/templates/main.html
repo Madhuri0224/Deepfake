@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div>
+    <!-- Page Content -->
+    <div class="container1 mt-5">
+        <div class="row"> <!-- Add margin-top and margin-bottom -->
+            <div class="col-lg-6 containt">
+                <h1 class="display-4">Deepfake Video</h1>
+                <h1 class="display-4">Detection</h1>
+                <p class="lead mt-4 pad">"Step into a realm of digital authenticity with our Deepfake Detection platform. Our state-of-the-art technology empowers you to distinguish real from fake, safeguarding against the rising tide of manipulated content."</p>
+            </div>
+            <div class="col-lg-6 bgImg">
+                <img src="{% static 'images/bg3.jpg' %}" alt="Deepfake Detection" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-4 mb-5">
+            <div class="col-md-6">
+                <h3>Get Started</h3>
+                <p>
+                    Upload a video for deepfake analysis and receive real-time results.
+                </p>
+                <a href="{% url 'ml_app:home' %}" class="btn btn-primary">Try It Now>></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.containt {
+    padding: 50px;
+    padding-left: 80px !important;
+}
+
+.container1 {
+    color: white;
+    background-color: black;
+    margin: 0% !important;
+    padding: 20px;
+}
+
+.pad {
+    padding-right: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+</style>
+{% endblock %}

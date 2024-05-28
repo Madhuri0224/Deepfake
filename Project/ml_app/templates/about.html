@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block content%}
+<div class="about-us mar">
+    <div class="container mb-4">
+        
+        <div class="row ">
+            <div class="col-md-6">
+                <img src="{% static 'images/bg.png'%}" alt="Deepfake Detection" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h2>Our Deepfake Detection Technology</h2>
+                <p>
+            At the core of our efforts is the development of state-of-the-art deepfake detection technology. We leverage
+            advanced machine learning algorithms and neural networks to analyze and identify manipulated content in
+            videos.
+          </p>
+          <p>
+            Our system employs a combination of facial recognition, pattern analysis, and behavior modeling to
+            distinguish between genuine and deepfake videos. By staying at the forefront of technological advancements,
+            we aim to provide effective tools for individuals and organizations to combat the harmful impact of deepfake
+            technology.
+          </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+                <div class="col-md-6">
+                    <h2>About Our Team</h2>
+                    <p>
+            We are a dedicated team of professionals committed to tackling the challenges posed by deepfake technology.
+            
+          </p>
+          <p>
+            Our mission is to safeguard the integrity of digital content by developing innovative solutions for detecting
+            and preventing the spread of deepfake videos. With a focus on research, collaboration, and innovation, we
+            strive to stay ahead in the ever-evolving landscape of synthetic media.
+          </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="{% static 'images/bg4.png'%}" alt="Team Photo" class="img-fluid rounded">
+                </div>
+            </div>
+
+        <div class="row mt-4">
+            <div class="col-md-4 mt-4">
+                <img src="{% static 'images/about1.jpg'%}" alt="Research" class="img-fluid rounded">
+                
+            </div>
+            <div class="col-md-4 mt-4">
+                <img src="{% static 'images/about2.jpg'%}" alt="Innovation" class="img-fluid rounded">
+            </div>
+            <div class="col-md-4 mt-4">
+                <img src="{% static 'images/about3.jpg'%}" alt="Collaboration" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12 mt-4">
+                <h2>Join Us in the Fight Against Deepfakes</h2>
+                <p>
+            We invite individuals, researchers, and organizations to join us in our collective effort to combat the
+            challenges posed by deepfake technology. By fostering a collaborative environment and sharing knowledge, we
+            can collectively contribute to building a safer digital space for all.
+          </p>
+          <p>
+            Whether you are a developer, researcher, or someone passionate about the ethical use of technology, we
+            welcome you to join our mission. Together, we can make a significant impact in the fight against deepfakes
+            and protect the integrity of digital content.
+          </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style scoped>
+    /* Add your component-specific styles here */
+    .about-us {
+        padding: 5px 0;
+    }
+    
+    h2 {
+        color: #333;
+    }
+    
+    p {
+        color: #666;
+    }
+    
+    .img-fluid {
+        width: 100%;
+        height: auto;
+    }
+    
+    .rounded {
+        border-radius: 8px;
+    }
+    
+    .mar {
+        margin-top: 20px !important;
+    }
+    </style>
+{%endblock%}

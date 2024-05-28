@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block content%}
+    <div class="container contact-form-wrapper mar">
+        <div class="contact-form">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email*:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your email address"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message*:</label>
+                    <textarea class="form-control" id="message" name="message" placeholder="Type your message here" rows="5"
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+<style scoped>
+/* Add your component-specific styles here */
+.mar {
+    margin-top: 100px !important;
+    margin-bottom: 1px !important;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-wrapper {
+    min-height: 75vh;
+    /* Set the minimum height to 75% of the viewport height */
+}
+
+.form-group{
+    margin-bottom: 18px;
+
+}
+.form-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+</style>
+
+<!-- eslint-disable vue/multi-word-component-names -->
+<script>
+export default {
+    name: 'Contact',
+}
+</script>
+{%endblock%}
